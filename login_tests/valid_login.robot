@@ -6,8 +6,8 @@ Documentation     A test suite with a single test for valid login.
 Resource          resource.robot
 
 *** Variables ***
-&{DICT_LOGIN}   username=demo   password=mode
-@{LIST_LOGIN}   (demo,mode)
+@{LIST_LOGIN}    demo  mode
+...  &{DICT_LOGIN}   username=demo   password=mode
 
 *** Test Cases ***
 Valid Login
